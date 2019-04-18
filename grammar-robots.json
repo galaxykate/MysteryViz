@@ -1,0 +1,39 @@
+{	
+	"personAdj": ["morally-conflicted", "sensitive", "easily-startled", "kindhearted", "naked", "sinister", "proud", "patriotic", "hard-working"],
+	"abstractConcept": ["man", "mankind", "humanity", "fear", "the crushing grind of capitalism", "the inevitability of obsolescence", "the devil", "the Cold War", "loneliness", "love", "religion", "the Singularity"],
+	"enemyAdj": ["soviet ", "Nazi ", "alien ","gelatinous", "undead ", "capitalist ", "robotic ", "cybernetic ", "were", "low-income"],
+	"enemyFancy": ["#enChar.s# from the future", "#enChar.s# from an alternative timeline","#enChar.s# occupying the Earth", "#enemyAdj##enChar.s#"],
+	"enemyType":["direwolf", "bug", "lobster", "squid", "shrimp", "cyborg", "colonizer", "capitalist", "soldier", "pirate", "cage fighter", "assassin", "monster", "zombie", "demon", "housewife"],
+	"transitiveActivity": ["dancing for", "repairing", "sexually servicing", "pouring drinks for", "killing", "assassinating", "raising", "training"],
+	"killingDudes": ["killing #enAdj##enChar#"],
+	
+	"robotActivity": ["cleaning spaceships", "shoveling space-coal", "sexually servicing #enemyAdj##enemyType#", "#killingDudes#" ],
+	
+	"relationship": ["past self", "future self", "ex-lover", "child", "murdered fiancée"],
+	"summary": ["The real #enChar# was #abstractConcept#, all along.", "And one #enChar# was #mcTheir# #relationship#.", "#mcThey.capitalize# wakes up to realize that #mcThey# was just a #enChar# dreaming of being a #myChar#"],
+
+	
+	
+	"everyday" : ["#myChar# #myActivity#"],
+	
+	"everyday": ["#sales#"],
+	"carryable": ["bagged lunch", "sealed box", "mysterious parcel", "speckled egg", "throbbing sack", "metallic cube", "glowing orb", "pill", "sealed bottle", "old leather briefcase", "alien artifact"],
+	"horribleObj": ["full of meat", "human souls", "bleeding slightly", "hatching", "whispering racist slogans", "rapidly multiplying"] ,
+	"sell": ["sell", "deliver", "carry"],
+	"initSales": ["[sell:#sell#][myObj:#carryable#]"],
+	"sales": "#initSales#Every day #myAdj.a# #myChar# #sell.s# #myObj.s# to #enFancy#. One day, #objAccident#, and the #myChar# realizes that the #myObj.s# are #horribleObj#",
+	
+	"object": ["#mcObj#", "#placeObj#"],
+
+	"activityNoun": ["a secret war against #enFancy#", "a plan by #enFancy# to control #mcType.s#", "a metaphor for #abstractConcept#"],
+	"somethingRevealed": ["a panel opens in #object.a#", "#object.a# is #horribleObj#", "#object.a# begins speaking in a robotic voice", "#object.a# explodes#", "#object.a# begs for mercy#"],
+	"plotSimulation": "#oneday.capitalize# #mc# #placeActivity# on #place#. #somethingRevealed# and #mcThey# realize that #placeActivity# was actually #activityNoun#",
+	"plot": ["#plotSimulation#"],
+	"setChar":["[mc:character]"],	
+	"setEnemy":"[enChar:#enemyType#][enFancy:#enemyFancy#]",
+	"setPronouns": ["[mcThey:she][mcThem:her][mcTheir:her]", "[mcThey:he][mcThem:him][mcTheir:his]"],
+	"setSetting": ["[place:#farm#][placeActivity:#farmActivity#][placeSub:silo,farmhouse][placeObj:#farmAnimal#]", "[place:#spaceStation#][placeActivity:#spaceActivity#][placeSub:contamination bay,#scifiAdj# #room#,engine #room#]"],
+
+
+	"origin": ["#setSetting##setPronouns#[mcAdj:#personAdj#]#setEnemy##setChar##plot#"]
+}
